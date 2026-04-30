@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://agegnehuagegnehu900-ops.github.io/agegnehu-tech-apps/sitemap.xml
