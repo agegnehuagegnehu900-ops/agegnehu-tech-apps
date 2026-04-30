@@ -8,6 +8,7 @@ import {
   ScrollView,
   Linking,
   TextInput,
+  Platform,
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { chapters, developerInfo } from './data';
@@ -304,9 +305,20 @@ export default function App() {
           </TouchableOpacity>
         )}
         ListFooterComponent={
-          <TouchableOpacity style={styles.aboutButton} onPress={() => setShowAbout(true)}>
-            <Text style={styles.aboutButtonText}>About the Developer / {'\u1235\u120B \u1308\u1295\u1262\u12CD'}</Text>
-          </TouchableOpacity>
+          <View>
+            {Platform.OS === 'web' && (
+              <TouchableOpacity
+                style={styles.downloadButton}
+                onPress={() => Linking.openURL('https://github.com/agegnehuagegnehu900-ops/agegnehu-tech-apps/releases/latest')}
+              >
+                <Text style={styles.downloadButtonIcon}>{'\uD83D\uDCF2'}</Text>
+                <Text style={styles.downloadButtonText}>DOWNLOAD APP (APK)</Text>
+              </TouchableOpacity>
+            )}
+            <TouchableOpacity style={styles.aboutButton} onPress={() => setShowAbout(true)}>
+              <Text style={styles.aboutButtonText}>About the Developer / {'\u1235\u120B \u1308\u1295\u1262\u12CD'}</Text>
+            </TouchableOpacity>
+          </View>
         }
       />
     </View>
@@ -461,6 +473,24 @@ const styles = StyleSheet.create({
   amharicContainer: { marginTop: 5 },
   amharicText: { fontSize: 15, color: '#444', lineHeight: 24 },
   footerText: { textAlign: 'center', marginTop: 40, marginBottom: 20, color: '#999', fontSize: 12 },
+
+  downloadButton: {
+    backgroundColor: '#28a745',
+    padding: 20,
+    borderRadius: 12,
+    marginTop: 15,
+    marginBottom: 10,
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    elevation: 6,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.2,
+    shadowRadius: 5,
+  },
+  downloadButtonIcon: { fontSize: 24, marginRight: 10 },
+  downloadButtonText: { color: '#fff', fontSize: 18, fontWeight: 'bold', letterSpacing: 1 },
 
   aboutButton: {
     backgroundColor: '#003366',
