@@ -309,7 +309,7 @@ export default function App() {
             {Platform.OS === 'web' && (
               <TouchableOpacity
                 style={styles.downloadButton}
-                onPress={() => Linking.openURL('https://github.com/agegnehuagegnehu900-ops/agegnehu-tech-apps/releases/latest')}
+                onPress={() => Linking.openURL('https://expo.dev/artifacts/eas/srBv9AKp7QjAeGfRFRaEoL.apk')}
               >
                 <Text style={styles.downloadButtonIcon}>{'\uD83D\uDCF2'}</Text>
                 <Text style={styles.downloadButtonText}>DOWNLOAD APP (APK)</Text>
