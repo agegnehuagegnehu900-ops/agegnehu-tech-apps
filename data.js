@@ -1,3 +1,6 @@
+import { travelVocabulary, familyVocabulary, workVocabulary, emergencyVocabulary } from './vocabulary';
+import { grammarLessons } from './grammar';
+
 export const chapters = [
   {
     id: '1',
@@ -213,6 +216,41 @@ export const chapters = [
 
       { de: '═══════════════════════════════\nየሰዋስው ማስታወሻ (Grammar & Culture)\n═══════════════════════════════', am: 'የጀርመንኛ ቁጥሮች ልዩ ባሕሪያት:\n\n1. ቁጥሮች "ተገላብጠው" ይነበባሉ: ከ21 ጀምሮ ቁጥሮች "ተገላብጠው" ይነበባሉ — ትንሹ ቁጥር ፊት ይመጣል! 21 = "Einundzwanzig" (አንድ-እና-ሃያ)፣ ልክ "አንድና ሃያ" እንደማለት። ይህ ለጀማሪ ተማሪዎች ግራ የሚያጋባ ሊሆን ይችላል ግን በልምምድ ቀላል ይሆናል።\n\n2. ነጥብና ኮማ ልዩነት: ጀርመንኛ ነጥብ (.) ለሺህ ይጠቀማል: 1.000 = ሺህ። ኮማ (,) ለአስርዮሽ: 3,50 = ሦስት ነጥብ ሃምሳ። ይህ ከእንግሊዝኛ/አሜሪካን ተቃራኒ ነው!\n\n3. ሰዓት አቆጣጠር: ጀርመን 24-ሰዓት ሥርዓት ይጠቀማል: 14:00 = ከሰዓት 2:00፣ 20:00 = ማታ 8:00። "Viertel vor drei" = "ከ3 ሩብ ሲቀር" = 2:45. "Halb drei" = "ግማሽ ሦስት" = 2:30 (ይጠንቀቁ! "ግማሽ ሦስት" ማለት 2:30 ነው እንጂ 3:30 አይደለም!).\n\n4. ቀን መጻፍ: ቀን.ወር.ዓመት ቅርጸት ይጠቀማሉ: 25.12.2026 = December 25, 2026.\n\n5. ገንዘብ: ጀርመን ዩሮ (Euro) ይጠቀማል: "€" ምልክት ከቁጥር በኋላ ይመጣል (ለምሳሌ 5,00 €).\n\nባህላዊ ማስታወሻ: ጀርመኖች ቁጥሮችን ሲቆጥሩ ከአውራ ጣት ይጀምራሉ (ከስር ጣት አይደለም)! ስለዚህ "1" ሲሉ አውራ ጣት ብቻ ያሳያሉ። ይህ ከኢትዮጵያ ልማድ ይለያል — ያስታውሱ ሰዎች ግራ እንዳይጋቡ።' }
     ]
+  },
+  {
+    id: '4',
+    title: 'ምዕራፍ 4: የጉዞ ቃላት — Travel Vocabulary (150+ ቃላት)',
+    author: 'Agegnehu Tech',
+    content: 'ይህ ምዕራፍ ለጉዞ አስፈላጊ የሆኑ 150+ ቃላትን ያካትታል — በአውሮፕላን ጣቢያ፣ ሆቴል፣ ትራንስፖርት፣ ምግብ ቤት፣ ግዢ። እያንዳንዱ ቃል Pro Tip በአማርኛ አለው።',
+    details: travelVocabulary
+  },
+  {
+    id: '5',
+    title: 'ምዕራፍ 5: ቤተሰብና ስሜቶች — Family & Emotions (100+ ቃላት)',
+    author: 'Agegnehu Tech',
+    content: 'ይህ ምዕራፍ የቤተሰብ አባላት፣ ስሜቶች፣ ቤት ቃላትን ያካትታል — ከ Pro Tip ጋር።',
+    details: familyVocabulary
+  },
+  {
+    id: '6',
+    title: 'ምዕራፍ 6: ሥራ ቃላት — Work & Career (150+ ቃላት)',
+    author: 'Agegnehu Tech',
+    content: 'ይህ ምዕራፍ ስለ ሥራ፣ ሙያ፣ ቢሮ፣ ማመልከቻ ቃላትን ያካትታል — ከ Pro Tip ጋር።',
+    details: workVocabulary
+  },
+  {
+    id: '7',
+    title: 'ምዕራፍ 7: ድንገተኛ ሁኔታ — Emergency & Health (100+ ቃላት)',
+    author: 'Agegnehu Tech',
+    content: 'ይህ ምዕራፍ ለድንገተኛ ሁኔታ አስፈላጊ ቃላትንና ዓረፍተ ነገሮችን ያካትታል — ሐኪም ቤት፣ ፖሊስ፣ እሳት፣ ሕግ።',
+    details: emergencyVocabulary
+  },
+  {
+    id: '8',
+    title: 'ምዕራፍ 8: ሰዋስው — Complete Grammar (Articles, Cases, Verbs)',
+    author: 'Agegnehu Tech',
+    content: 'ይህ ምዕራፍ የጀርመንኛ ሰዋስው (Grammar) ሙሉ ማብራሪያ ያካትታል — Articles (Der/Die/Das)፣ Cases (Nominativ/Akkusativ/Dativ/Genitiv)፣ Verb Conjugation፣ Sentence Structure።',
+    details: grammarLessons
   }
 ];
 
