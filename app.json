@@ -16,6 +16,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.agegnehutech.germanlanguagemaster",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#003366"
@@ -24,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7d45d437-dc25-4c85-8293-f2ef0ac78135"
+      }
+    },
+    "owner": "agegnehu1"
   }
 }
